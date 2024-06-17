@@ -1,0 +1,66 @@
+<div class="row-layout group">
+  <button igxButton="contained" igxRipple [igxToggleAction]="dropdown" class="confirm-detilas">
+    <span>More options</span>
+    <igx-icon>
+      expand_more
+    </igx-icon>
+  </button>
+  <igx-drop-down #dropdown class="dropdown">
+    <igx-drop-down-item [isHeader]="true">
+      Header 1
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      <igx-prefix>
+        <igx-icon class="icon">
+          content_cut
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <p class="ig-typography__caption text">
+          Cmd + X
+        </p>
+      </igx-suffix>
+      Cut
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      <igx-prefix>
+        <igx-icon class="icon">
+          content_copy
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <p class="ig-typography__caption text">
+          Cmd + C
+        </p>
+      </igx-suffix>
+      Copy 
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      <igx-prefix>
+        <igx-icon class="icon">
+          content_paste
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <p class="ig-typography__caption text">
+          Cmd + V
+        </p>
+      </igx-suffix>
+      Paste
+    </igx-drop-down-item>
+    <igx-drop-down-item [isHeader]="true">
+      Header 2
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      <igx-prefix>
+        <igx-icon class="icon_1">
+          place
+        </igx-icon>
+      </igx-prefix>
+      Option 2.1
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      Option 2.2
+    </igx-drop-down-item>
+  </igx-drop-down>
+</div>
