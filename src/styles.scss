@@ -5,8 +5,16 @@
 @use "@infragistics/igniteui-angular/theming" as *;
 
 @include core();
-@include typography();
-@include light-theme($light-material-palette);
+@include typography($font-family: "Mulish", $type-scale: $fluent-type-scale);
+
+$custom-palette: palette(
+  $primary: #2b579a,
+  $secondary: #2b579a,
+  $surface: #fff,
+  $error: #a80000,
+  $success: #107c10,
+  $warn: #797673);
+@include theme($palette: $custom-palette, $schema: $light-fluent-schema, $elevation: false);
 
 body {
   background: hsla(var(--ig-surface-500));
